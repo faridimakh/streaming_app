@@ -8,7 +8,7 @@ package object packfar {
   cluster mode:
    */
   final val spark = new sql.SparkSession.Builder().appName("stream_app").master("yarn").getOrCreate()
-  val shemas_data: StructType = new StructType()
+  val shemas_data_stream: StructType = new StructType()
     .add("InvoiceNo", StringType ,nullable = true)
     .add("StockCode", StringType ,nullable = true)
     .add("Description", StringType ,nullable = true)
