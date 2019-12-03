@@ -24,7 +24,7 @@ object mainClass {
       .csv(path_reciver_streams)
 
     val ds_process_capture_stream1: Dataset[Row] = df_capture_stream.where("Quantity < 0")
-    val ds_process_capture_stream2: Dataset[Row] = df_capture_stream.where("Quantity > 0")f
+    val ds_process_capture_stream2: Dataset[Row] = df_capture_stream.where("Quantity > 0")
 
     ds_process_capture_stream1.writeStream.format("csv")
       .option("checkpointLocation", path_storage_process_recived_streams + "checkpoint_Location1")

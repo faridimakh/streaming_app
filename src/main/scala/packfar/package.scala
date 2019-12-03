@@ -3,7 +3,9 @@ import org.apache.spark.sql.types.{DoubleType, IntegerType, StringType, StructTy
 
 package object packfar {
   /*
+  local mode:
   final val spark = new sql.SparkSession.Builder().appName("stream_app").master("local[*]").getOrCreate()
+  cluster mode:
    */
   final val spark = new sql.SparkSession.Builder().appName("stream_app").master("yarn").getOrCreate()
   val shemas_data: StructType = new StructType()
