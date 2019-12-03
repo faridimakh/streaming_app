@@ -5,8 +5,8 @@ for lunching this application ,the following steps must be followed:
   sbt clean package
 
 2-create two empty folders in hdfs (or locally):
-  a-input
-  b-output
+  a-input (for path_reciver_streams value)
+  b-output (for path_storage_process_recived_streams  value)
 
 3-send tu jar result with spark-submit:
   spark-submit --class packfar.mainClass --master yarn streaming_app_2.11-0.1.jar /user/aarid/input/ /user/aarid/output/
