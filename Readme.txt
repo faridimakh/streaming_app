@@ -4,7 +4,7 @@ for lunching this application ,the following steps must be followed:
 1-package the application:
   sbt clean package
 
-2-you have to create two empty folders in hdfs (or locally):
+2-create two empty folders in hdfs (or locally):
   a-input
   b-output
 
