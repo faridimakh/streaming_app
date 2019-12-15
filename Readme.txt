@@ -1,7 +1,7 @@
 -----------------------------------------------------------------------------------------
 ----------------------------spark structured streaming example---------------------------
 this application solve the following problem:
-we have data streams, the column contain false values(negative values),
+we have data streams, the column "Quantity" contain false values(negative values),
 we hope to separate true and false values in real time and save it in separated paths
 ------------------------------------------------------------------------------------------
 for lunching this application ,the following steps must be followed:
@@ -18,5 +18,5 @@ for lunching this application ,the following steps must be followed:
 -------------------------------------------------------------------------------------------
 
 **result: your data is separated on real time(as well as you push data on input repository ) in to parts:
-negative folder: contain data which have negative values for columns
-positive folder: contain data which have positive values for columns
+negative folder: contain data which have negative values for column "Quantity"
+positive folder: contain data which have positive values for columns "Quantity"
