@@ -2,7 +2,7 @@
 ----------------------------spark structured streaming example---------------------------
 this application solve the following problem:
 we have data streams, the column contain false values(negative values),
-we hope to separate true and false value in real time
+we hope to separate true and false values in real time and save it in separated paths
 ------------------------------------------------------------------------------------------
 for lunching this application ,the following steps must be followed:
 1-package the application:
